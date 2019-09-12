@@ -1,0 +1,126 @@
+body{
+    background-color: rgb(200, 200, 200);
+}
+
+#gallery-title{
+    text-align: center;
+    margin-bottom: 0px;
+    padding: 20px;
+    color: darkslategray;
+}
+
+.btn-text{
+  font-family: "Poppins", sans-serif;
+}
+
+i, a{
+  font-family: "Poppins", sans-serif;
+}
+
+.heading{
+  color: ghostwhite;
+  padding: 15px;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.info-paragraph{
+    text-align: center;
+    padding: 50px;
+    color: rgb(70, 70, 70);
+    font-family: "Poppins", sans-serif;
+}
+
+.gallery {
+    height: auto;
+    padding: 15px;
+    margin: 15px;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    text-align: center;
+}
+
+
+.image-data-container{
+    margin: 20px;
+    padding: 5px;
+    display: inline-block;
+    text-align: center;
+    width: 70%;
+    vertical-align: top;
+}
+
+.image-data-container p{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.image-data-container img{
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.pb{
+    width: 100%;
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons input{
+    width: 48%;
+    height: 30px;
+    padding: 2px;
+    margin: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+    .gallery{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image-data-container{
+        width: 100%;
+    }
+
+    .info-paragraph, .btn-text{
+        font-size: xx-small;
+    }
+
+    .heading{
+       font-size: x-large; 
+    }
+  }
+  
+@media only screen and (min-width: 992px){
+    .gallery{
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+  
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    .gallery{
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+
+    .info-paragraph, .btn-text{
+        font-size: x-small;
+    }
+
+}

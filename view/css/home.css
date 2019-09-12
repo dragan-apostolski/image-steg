@@ -1,0 +1,294 @@
+input[type="file"] {
+  display: none;
+}
+
+.btn-text, .label-text{
+  font-family: "Poppins", sans-serif;
+}
+
+.menu-btn-text{
+  font-family: "Poppins", sans-serif;
+}
+
+.heading{
+  color: ghostwhite;
+  padding: 15px;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.info-paragraph, .info-paragraph-header{
+  text-align: center;
+  margin: 0px;
+  color: rgb(75, 75, 75);
+  font-family: "Poppins", sans-serif;
+}
+
+#container-file-drop{
+  background-color: rgb(200, 200, 200);
+  margin: 0px;
+  padding: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+#drop-zone {
+  background-color: rgb(220, 220 , 220);
+  border: 1.5px dashed #007bff;
+  width:  50%;
+  height: 200px;
+  margin: 10px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+#drop-zone:hover{
+  background-color: rgb(180, 180, 180);
+}
+
+#browse-zone{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 50%;
+  margin: 15px;
+}
+
+#steg-container-wrapper{
+  background-color: rgb(180, 180, 180);
+  display: none;
+  flex-direction: column;
+  margin: 0px;
+  align-items: center;
+}
+
+#steg-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+}
+
+#image-info-holder{
+  width: 50%;
+  margin: 25px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#image-container{
+    max-width: 70%;
+    max-height: 70%;
+}
+
+.download-save-container{
+  display: flex;
+  width: 70%;
+}
+
+#download-anchor{
+  color: white;
+  cursor: pointer;
+  width: 50%;
+  margin-right: 2px;
+}
+
+#save-button{
+  width: 50%;
+  margin-left: 2px;
+}
+
+#progress-bar-wrapper{
+  width: 70%;
+  height: 35px;
+}
+
+#progress-bar{
+  text-align: center;
+  color:white;
+}
+
+#messages{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin: 25px;
+  padding: 15px;
+}
+
+#encoding-form{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.message-title{
+  height: 30px;
+  text-align: left;
+  width: 100%;
+}
+
+.message-box{
+  height: 300px;
+  width: 100%;
+  text-align: left;
+}
+
+#messages-container{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15px;
+}
+
+#title-edit-container{
+  display: none;
+  margin: 0px;
+  padding-bottom: 17px;
+  padding-top: 0px;
+}
+
+#cancel-update-cont{
+  display: none;
+  flex-direction: row;    
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+}
+
+#btnUpdate{
+  width: 49%;
+}
+
+#btnCancel{
+  width: 49%;
+}
+
+
+@media only screen and (max-width: 600px) {
+  #steg-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+  }
+
+  #browse-zone, #drop-zone{
+    width: 75%
+  }
+
+  #container-file-drop{
+    padding: 0px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  #image-info-holder, #messages, #progress-bar-wrapper{
+    width: 90%;
+    margin: 0px;
+  }
+
+  .download-save-container{
+    width: 100%;
+  }
+
+  .info-paragraph, .menu-btn-text, .message-title{
+    font-size: xx-small;
+  }
+
+  .info-paragraph-header{
+    font-size: xx-small;
+    width: 70%;
+  }
+
+  .message-box{
+    font-size: xx-small;
+    height: 150px;
+  }
+
+  .heading{
+    font-size: x-large;
+  }
+
+  .btn-text {
+    width: 100%;
+    font-size: xx-small;
+  }
+
+  .label-text{
+    width: 70%;
+    font-size: xx-small
+  }
+}
+
+
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  #container-file-drop{
+    padding: 0px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  #steg-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px;
+  }
+
+  #steg-container-wrapper{
+    padding-bottom: 70px;
+    padding-top: 70px;
+  }
+
+  #image-info-holder, #messages{
+    width: 50%;
+    margin: 0px;
+  }
+
+  #progress-bar-wrapper{
+    width: 70%;
+  }
+
+  .download-save-container{
+    width: 100%;
+  }
+
+  .info-paragraph, .menu-btn-text, .message-title{
+    font-size: x-small;
+  }
+
+  .info-paragraph-header{
+    font-size: x-small;
+    width: 75%;
+  }
+
+  .message-box{
+    font-size: x-small;
+    height: 150px;
+  }
+
+  .btn-text {
+    width: 100%;
+    font-size: x-small;
+  }
+
+  .label-text{
+    width: 50%;
+    font-size: x-small;
+  }
+}
